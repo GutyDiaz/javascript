@@ -1,11 +1,11 @@
 #title{
     color: black;
-    font-size:50px;
+    font-size:80px;
     text-decoration: underline;
 }
 #title2{
-    color: black;
-    font-size:40px;
+    color: #000000;
+    font-size:60px;
     text-decoration: underline;
 }
 body{
@@ -25,7 +25,7 @@ body{
     text-align: center;
     align-content: center;
     background-color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .productoCard{
     color: black;
@@ -40,7 +40,7 @@ body{
 .colorCard{
     color: black;
     font-size:15px;
-    font-family:Arial, Helvetica, sans-serif 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .cantidadrCard{
     color: black;
@@ -51,4 +51,21 @@ body{
     font-size:20px;
     font-weight: bold;
     margin-bottom: 30px;
+}
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#text{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+}
+.btn{
+    padding: 10px;
+    margin: 15px;
 }
