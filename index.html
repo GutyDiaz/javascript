@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <main>
+            <section>
+                <div>
+                    <h1 id="title">BIENVENIDO</h1>
+                </div>
+                <div>
+                    <h2 id="title2">LOS PRODUCTOS EN SU DEPOSITO SON:</h1>
+                </div>
+            </section>  
+            <div id = "productos"></div>
+        </main>
+    </header>
+    <footer>
+        <form>
+            <label for="articulo">Articulo</label>
+            <input type="text" id="articuloInput" name="articulo"> 
+            <label for="sku">Sku</label>
+            <input type="text" id="skuInput" name="sku">
+            <label for="color">Color</label>
+            <input type="text" id="colorInput" name="color">
+            <label for="cantidad">Cantidad</label>
+            <input type="text" id="cantidadInput" name="cantidad">
+            <label for="precio">Precio</label>
+            <input type="text" id="precioInput" name="precio">
+            <br>
+        </form>     
+        <br>
+        <button id="guardarProductoBtn">Guardar </button>
+        <button id="mostrarStockBtn">Mostrar Lista</button>
+        <button id="ocultarStockBtn">Ocultar Lista</button>
+        <button id="modificarBtn">Modificar Producto</button>
+        
+    </footer>
+<script src="stock.js"> </script>   
+</body>
+</html>
