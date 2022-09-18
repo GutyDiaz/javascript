@@ -1,0 +1,24 @@
+{
+  "name": "productos",
+  "version": "1.0.0",
+  "description": "Proyecto de ecommerce",
+  "main": "datos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GutyDiaz/javascript.git"
+  },
+  "author": "Gustavo Diaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GutyDiaz/javascript/issues"
+  },
+  "homepage": "https://github.com/GutyDiaz/javascript#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "luxon": "^3.0.3",
+    "sweetalert2": "^11.4.33"
+  }
+}

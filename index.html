@@ -4,44 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
-<body>
-    <header>
+<body> 
+      <nav> 
+        <div>
+          </ul>
+            <ul className="navbar-nav me-auto">  
+                <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModal" class="btn btn-secondary"><i class="fas fa-shopping-cart fa-1x"></i><span id="contadorCarrito">0</span></a>
+            </ul>
+          </div> 
+      </nav>
+      <div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+            <div class="row ml-ato">
+              <p id="precioTotal"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" data-bs-dismiss="modal" class="btn btn-success" id="botonFinalizarCompra">Finalizar Compra</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <title>JS</title>
+  <header>
         <main>
+           <div id="fecha"></div>
             <section>
                 <div>
-                    <h1 id="title">BIENVENIDO</h1>
+                    <h1 id="title">QUE VAS A COMPRAR?</h1>
                 </div>
-                <div>
-                    <h2 id="title2"> MI TIENDA </h1>
-                </div>
-            </section>  
+            </section>
             <div id = "productos"></div>
         </main>
-    </header>
-    <footer>
+  </header>
+  <footer>
+    <!-- USUARIO -->
+    <div class="btns">
+      <button class="btn" id="mostrarStockBtn">Mostrar Lista</button>
+      <button class="btn" id="ocultarStockBtn">Ocultar Lista</button>
+    </div>    
+    <div>
+      <h3 id="sub">Agregar nuevos productos</h1>
+    </div>
         <form id="formulario">
             <label id=text for="articulo">Articulo</label>
             <input type="text" id="articuloInput" name="articulo"> 
-            <label id=text for="sku">Sku</label>
-            <input type="text" id="skuInput" name="sku">
             <label id=text for="color">Color</label>
             <input type="text" id="colorInput" name="color">
             <label id=text for="cantidad">Cantidad</label>
-            <input type="text" id="cantidadInput" name="cantidad">
+            <input type="text" id="cantidadInput" name="color">
             <label id=text for="precio">Precio</label>
             <input type="text" id="precioInput" name="precio">
             <br>
-        </form>     
-        <br>
-        <button class="btn" id="guardarProductoBtn">Guardar </button>
-        <button class="btn" id="mostrarStockBtn">Mostrar Lista</button>
-        <button class="btn" id="ocultarStockBtn">Ocultar Lista</button>
-        <button class="btn" id="modificarBtn">Modificar </button>
-        
-    </footer>
-<script src="stock.js"> </script>   
+        </form>
+      <!-- ALTA DE NUEVOS PRODUCTOS -->  
+        <div class="btns">
+          <button class="btn" id="guardarProductoBtn">Guardar </button>
+        </div>    
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>  
+    <script src="datos.js"> </script> 
+    <script src="stock.js"> </script> 
 </body>
 </html>

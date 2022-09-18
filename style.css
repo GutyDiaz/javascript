@@ -1,26 +1,60 @@
 #title{
+    display: flex;
     color: black;
     font-size:80px;
     text-decoration: underline;
+    justify-content: center;
+}
+#sub{
+    display: flex;
+    color: black;
+    font-size:30px;
+    justify-content: center;
 }
 #title2{
+    display: flex;
     color: #000000;
     font-size:60px;
     text-decoration: underline;
+    justify-content: center;
 }
 body{
-    background-color: rgb(215, 159, 159);
+    background-color: rgb(79, 79, 79)!important;
     color: black;
     text-align: center;
     background-repeat: no-repeat;
     background-size: 100%;
 }
+#fecha{
+    display:flex;
+    color: rgb(10, 0, 0);
+    font-size:20px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 10px;
+}
+#productos.productos{
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.producto{
+    max-width: 20%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 6px 3px 3px rgb(0 0 0 / 30%) !important;
+}
 .card{
-    color: black;
+    display:flex-wrap;
+    color: black !important;
     width: 200px;
-    height: 220px;
+    height: 200px !important;
     margin: 1rem auto;
-    border: 4px solid black;
+    border: 4px solid black !important;
     border-radius: 5px;
     text-align: center;
     align-content: center;
@@ -29,16 +63,11 @@ body{
 }
 .productoCard{
     color: black;
-    font-size:20px;
+    font-size:15px;
     text-decoration: underline
 }
-.skuCard{
-    color: black;
-    font-size:15px;
-    
-}
 .colorCard{
-    color: black;
+    color: black !important;
     font-size:15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -47,7 +76,7 @@ body{
     font-size:15px;
 }
 .precioCard{
-    color: black;
+    color: rgb(0, 0, 0);
     font-size:20px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -64,8 +93,63 @@ body{
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 10px;
+    color:#fff;
 }
-.btn{
+.btns{
+    display: flex;
     padding: 10px;
     margin: 15px;
+    justify-content: center;
+    background-color:#010101;
+    font-size: 10px #fff;
+}
+#botonCarrito{
+    display: flex;
+    justify-content: end;
+    width: 42px;
+
+}
+.btn-outline-success {
+    --bs-btn-color: #084298 !important;
+    --bs-btn-border-color:#084298 !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #084298 !important;
+    --bs-btn-hover-border-color: #084298 !important;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg:#084298 !important;
+    --bs-btn-active-border-color: #084298 !important;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #084298 !important;
+    --bs-btn-disabled-bg: transparent;
+    --bs-gradient: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+#modal-body.modal-body {
+   font-size: 15px !important;
+}
+#mostrarStockBtn{
+    color: #fff;
+}
+#ocultarStockBtn{
+    color: #fff
+}
+#guardarProductoBtn{
+    color: #fff
+}
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #020202 !important;
+    --bs-btn-border-color:  #020202 !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg:  #020202 !important;
+    --bs-btn-hover-border-color:  #020202 !important;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #020202 !important;
+    --bs-btn-active-border-color: #020202 !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #020202 !important;
+    --bs-btn-disabled-border-color:  #020202 !important;
 }

@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "articulo": "Heladera Inverter",
+        "color": "Negro",
+        "cantidad": 1,
+        "precio": 75000
+    },
+    {
+        "id": 2,
+        "articulo": "Aire Acondicionado",
+        "color": "Blanco",
+        "cantidad": 1,
+        "precio": 40000
+    },
+    {
+        
+        "id": 3,
+        "articulo": "Smart TV 32'' ",
+        "color": "Gris",
+        "cantidad": 1,
+        "precio": 42000
+    },
+    {
+        "id": 4,
+        "articulo": "Celular A23",
+        "color": "Negro",
+        "cantidad": 1,
+        "precio": 72000
+    },
+    {
+        "id": 5,
+        "articulo": "Parlante Portatil",
+        "color": "Naranja",
+        "cantidad": 1,
+        "precio": 5500
+    },
+    {
+        "id": 6,
+        "articulo": "Cocina Florencia",
+        "color": "Gris",
+        "cantidad": 1,
+        "precio": 77999
+    },
+    {
+        "id": 7,
+        "articulo": "Pava Electrica",
+        "color": "Rojo",
+        "cantidad": 1,
+        "precio": 9899
+    },
+    {
+        
+        "id": 8,
+        "articulo": "Batidora de Mesa",
+        "color": "Rosa",
+        "cantidad": 1,
+        "precio": 25800
+    },
+    {
+        "id": 9,
+        "articulo": "Horno Electrico",
+        "color": "Negro",
+        "cantidad": 1,
+        "precio": 22999
+    },
+    {
+        "id": 10,
+        "articulo": "Freidora Digital",
+        "color": "Negro",
+        "cantidad": 1,
+        "precio": 32500
+    }
+]
