@@ -143,14 +143,6 @@ function ProductosCarrito(productosDelStorage) {
         productosDelStorage.forEach((productoCarrito) => {
             
             modalBody.innerHTML +=
-            //  `
-            // <p>${productoCarrito.articulo}</p>
-            // <p>Precio:$${productoCarrito.precio}</p>
-            // <p>Cantidad: <span id="cantidad">${productoCarrito.cantidad}</span></p>
-            // <button class= "btn btn-danger" id="botonEliminar${productoCarrito.id}"><i class="fas fa-trash-alt"></i></button>
-            // `
-       
-            
             `
                 <div id ="productoCarrito${productoCarrito.id}" >
                     <div>
@@ -250,21 +242,6 @@ function ProductosCarrito(productosDelStorage) {
         const input = event.target;
         input.value <=0 ? (input.value=1) : null;
     }
-    // btnBuscar.addEventListener('click', ()=>{
-    //     event.preventDefault()
-    //     console.log("click");
-    //     console.log(inputBuscar.value.toLowerCase());
-    //     let articuloBuscado = stock.filter(producto =>(producto.articulo.toLowerCase() == inputBuscar.value.toLowerCase()))
-    //     console.log(articuloBuscado);
-    //     if(articuloBuscado.length == 0){
-    //         console.log(`No hay coincidencia`);
-    //         mostrarStock(stock)
-    //     }else{
-    //         mostrarStock(articuloBuscado)
-    
-    //     }
-    // })
-    // let divLoader = document.getElementById("loader")
     let divLoader = document.getElementById("loader")
     const loading = setTimeout(()=>{
         divLoader.remove()
